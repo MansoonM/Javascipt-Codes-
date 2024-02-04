@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Template Literals</h2>
+<p>Template literals allows variables in strings:</p>
+<p id="demo"></p>
+
+<!----------------Script Starting.... ----------->
+
+<script>
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
+</script>
+
+</body>
+</html>
